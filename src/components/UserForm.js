@@ -25,7 +25,7 @@ const UserForm = ({ errors, touched, values, status }) => {
             <p className="error">{errors.email}</p>
           )}
 
-        <Field type="text" name="password" placeholder="Password" />
+        <Field type="password" name="password" placeholder="Password" />
           {touched.password && errors.password && (
             <p className="error">{errors.password}</p>
           )}
@@ -38,6 +38,9 @@ const UserForm = ({ errors, touched, values, status }) => {
             checked={values.terms}
           />
           <span className="checkmark" />
+          {touched.terms && errors.terms && (
+            <p className="error">{errors.terms}</p>
+          )}
         </label>
         
         <button type="submit">Submit!</button>
