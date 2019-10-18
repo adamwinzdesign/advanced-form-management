@@ -15,24 +15,24 @@ const UserForm = ({ errors, touched, values, status }) => {
     <div className = 'userForm'>
       <h1>Welcome New User!</h1>
       <Form>
-        <Field type="text" name="name" placeholder="Name" />
+        <Field className = 'formField' type="text" name="name" placeholder="Name" />
           {touched.name && errors.name && (
             <p className="error">{errors.name}</p>
           )}
         
-        <Field type="text" name="email" placeholder="Email" />
+        <Field className = 'formField' type="text" name="email" placeholder="Email" />
           {touched.email && errors.email && (
             <p className="error">{errors.email}</p>
           )}
 
-        <Field type="password" name="password" placeholder="Password" />
+        <Field className = 'formField' type="password" name="password" placeholder="Password" />
           {touched.password && errors.password && (
             <p className="error">{errors.password}</p>
           )}
 
         <label className="checkbox-container">
           I have read and I understand the Terms of Service*
-          <Field
+          <Field className = 'formField' 
             type="checkbox"
             name="terms"
             checked={values.terms}

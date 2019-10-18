@@ -20,3 +20,39 @@
 .App-link {
   color: #09d3ac;
 }
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+Form {
+  display: flex;
+  flex-direction: column;
+}
+
+Field {
+  margin: 1rem 0;
+}
+
+button {
+  height: 2rem;
+  margin-top: 2rem;
+}
+
+.formField {
+  margin-top: 2rem;
+  height: 2rem;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-container {
+  border: 1px solid black;
+}
